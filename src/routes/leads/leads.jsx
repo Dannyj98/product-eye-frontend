@@ -12,7 +12,6 @@ export default function Leads() {
   }, [])
 
   const getLeads = async (filter) => {
-    console.log("Filter: ", filter)
     const { isLoaded, error, result } = await Api.get(
       "http://localhost:3000/api/products",
       filter
